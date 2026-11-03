@@ -1,0 +1,14 @@
+{
+  "imagenes": [
+    {
+      "archivo": "03-06/fecha-de-corte.jpg",
+      "desde": 3,
+      "hasta": 6
+    },
+    {
+      "archivo": "27-02/factura-generada.jpg",
+      "desde": 27,
+      "hasta": 2
+    }
+  ]
+}
