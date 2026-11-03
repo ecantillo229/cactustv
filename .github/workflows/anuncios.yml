@@ -1,0 +1,46 @@
+# Cada vez que se suben o borran imágenes en la carpeta "anuncios", genera anuncios/lista.json
+# (la lista que leen las apps de CactusNet TV). No hay que editar nada a mano.
+# Subcarpetas con nombre DD-DD = días del mes en que se muestra cada imagen.
+name: Lista de anuncios
+on:
+  push:
+    paths:
+      - 'anuncios/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lista:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generar anuncios/lista.json
+        run: |
+          mkdir -p anuncios
+          python3 - <<'PY'
+          import os, re, json
+          # Imágenes sueltas en anuncios/: todos los días. En subcarpetas "DD-DD": solo esos días del mes
+          # (p. ej. 27-02 = del 27 al 2, cruzando el mes; 03-06 = del 3 al 6).
+          out = []
+          for root, dirs, files in os.walk('anuncios'):
+              dirs.sort()
+              rel = os.path.relpath(root, 'anuncios').replace(os.sep, '/')
+              top = '' if rel == '.' else rel.split('/')[0]
+              m = re.match(r'^(\d{1,2})-(\d{1,2})$', top)
+              for f in sorted(files):
+                  if not f.lower().endswith(('.jpg', '.jpeg', '.png')):
+                      continue
+                  e = {"archivo": f if rel == '.' else rel + '/' + f}
+                  if m:
+                      e["desde"], e["hasta"] = int(m.group(1)), int(m.group(2))
+                  out.append(e)
+          with open('anuncios/lista.json', 'w', encoding='utf-8') as fh:
+              json.dump({"imagenes": out}, fh, ensure_ascii=False, indent=2)
+          print(json.dumps(out, ensure_ascii=False, indent=2))
+          PY
+      - name: Guardar la lista
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add anuncios/lista.json
+          git diff --cached --quiet || (git commit -m "Actualizar lista de anuncios" && git push)
