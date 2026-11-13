@@ -1,4 +1,4 @@
-# Cada vez que se suben o borran imágenes en la carpeta "anuncios", genera anuncios/lista.json
+# Cada vez que se suben o borran imágenes o videos (.jpg .png .gif .mp4 .webm) en la carpeta "anuncios", genera anuncios/lista.json
 # (la lista que leen las apps de CactusNet TV). No hay que editar nada a mano.
 # Subcarpetas con nombre DD-DD = días del mes en que se muestra cada imagen.
 name: Lista de anuncios
@@ -28,7 +28,7 @@ jobs:
               top = '' if rel == '.' else rel.split('/')[0]
               m = re.match(r'^(\d{1,2})-(\d{1,2})$', top)
               for f in sorted(files):
-                  if not f.lower().endswith(('.jpg', '.jpeg', '.png')):
+                  if not f.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.mp4', '.webm')):
                       continue
                   e = {"archivo": f if rel == '.' else rel + '/' + f}
                   if m:
