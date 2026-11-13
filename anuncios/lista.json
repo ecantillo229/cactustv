@@ -1,6 +1,54 @@
 {
   "imagenes": [
     {
+      "archivo": "01_planes_hogar.mp4"
+    },
+    {
+      "archivo": "01_planes_hogar.png"
+    },
+    {
+      "archivo": "02_plan_basico.png"
+    },
+    {
+      "archivo": "03_plan_estandar.png"
+    },
+    {
+      "archivo": "04_plan_full.png"
+    },
+    {
+      "archivo": "05_simetrico.png"
+    },
+    {
+      "archivo": "06_instalacion.png"
+    },
+    {
+      "archivo": "07_rural.mp4"
+    },
+    {
+      "archivo": "07_rural.png"
+    },
+    {
+      "archivo": "08_fibra_provincial.png"
+    },
+    {
+      "archivo": "09_referidos.mp4"
+    },
+    {
+      "archivo": "09_referidos.png"
+    },
+    {
+      "archivo": "10_pagos.png"
+    },
+    {
+      "archivo": "11_atencion.png"
+    },
+    {
+      "archivo": "12_cobertura.mp4"
+    },
+    {
+      "archivo": "12_cobertura.png"
+    },
+    {
       "archivo": "03-06/fecha-de-corte.jpg",
       "desde": 3,
       "hasta": 6
