@@ -1,60 +1,136 @@
 {
   "imagenes": [
     {
-      "archivo": "01_planes_hogar.mp4"
+      "archivo": "cobertura.mp4"
     },
     {
-      "archivo": "01_planes_hogar.png"
+      "archivo": "cobertura.png"
     },
     {
-      "archivo": "02_plan_basico.png"
+      "archivo": "fibra-provincial.mp4"
     },
     {
-      "archivo": "03_plan_estandar.png"
+      "archivo": "fibra-provincial.png"
     },
     {
-      "archivo": "04_plan_full.png"
+      "archivo": "instalacion.mp4"
     },
     {
-      "archivo": "05_simetrico.png"
+      "archivo": "instalacion.png"
     },
     {
-      "archivo": "06_instalacion.png"
+      "archivo": "internet-rural.mp4"
     },
     {
-      "archivo": "07_rural.mp4"
+      "archivo": "internet-rural.png"
     },
     {
-      "archivo": "07_rural.png"
+      "archivo": "medios-de-pago.mp4"
     },
     {
-      "archivo": "08_fibra_provincial.png"
+      "archivo": "medios-de-pago.png"
     },
     {
-      "archivo": "09_referidos.mp4"
+      "archivo": "plan-100-megas.mp4"
     },
     {
-      "archivo": "09_referidos.png"
+      "archivo": "plan-100-megas.png"
     },
     {
-      "archivo": "10_pagos.png"
+      "archivo": "plan-150-megas.mp4"
     },
     {
-      "archivo": "11_atencion.png"
+      "archivo": "plan-150-megas.png"
     },
     {
-      "archivo": "12_cobertura.mp4"
+      "archivo": "plan-200-megas.mp4"
     },
     {
-      "archivo": "12_cobertura.png"
+      "archivo": "plan-200-megas.png"
     },
     {
-      "archivo": "03-06/fecha-de-corte.jpg",
+      "archivo": "planes-hogar.mp4"
+    },
+    {
+      "archivo": "planes-hogar.png"
+    },
+    {
+      "archivo": "portal-clientes.mp4"
+    },
+    {
+      "archivo": "portal-clientes.png"
+    },
+    {
+      "archivo": "refiere-y-gana.mp4"
+    },
+    {
+      "archivo": "refiere-y-gana.png"
+    },
+    {
+      "archivo": "soporte-whatsapp.mp4"
+    },
+    {
+      "archivo": "soporte-whatsapp.png"
+    },
+    {
+      "archivo": "te-atendemos.mp4"
+    },
+    {
+      "archivo": "te-atendemos.png"
+    },
+    {
+      "archivo": "velocidad-simetrica.mp4"
+    },
+    {
+      "archivo": "velocidad-simetrica.png"
+    },
+    {
+      "archivo": "wifi-24-vs-5ghz.mp4"
+    },
+    {
+      "archivo": "wifi-24-vs-5ghz.png"
+    },
+    {
+      "archivo": "wifi-6.mp4"
+    },
+    {
+      "archivo": "wifi-6.png"
+    },
+    {
+      "archivo": "wifi-internet-lento.mp4"
+    },
+    {
+      "archivo": "wifi-internet-lento.png"
+    },
+    {
+      "archivo": "wifi-seguridad.mp4"
+    },
+    {
+      "archivo": "wifi-seguridad.png"
+    },
+    {
+      "archivo": "wifi-ubicacion-router.mp4"
+    },
+    {
+      "archivo": "wifi-ubicacion-router.png"
+    },
+    {
+      "archivo": "03-06/fecha-de-corte.mp4",
       "desde": 3,
       "hasta": 6
     },
     {
-      "archivo": "27-02/factura-generada.jpg",
+      "archivo": "03-06/fecha-de-corte.png",
+      "desde": 3,
+      "hasta": 6
+    },
+    {
+      "archivo": "27-02/factura-generada.mp4",
+      "desde": 27,
+      "hasta": 2
+    },
+    {
+      "archivo": "27-02/factura-generada.png",
       "desde": 27,
       "hasta": 2
     }
